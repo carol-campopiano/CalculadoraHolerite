@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holerite Digital 2026</title>
+    <link rel="icon" href="images/favicon.png">
+
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <form class="formulario" id="formularioId"onsubmit="calcularHolerite(event)">
+        <h2>Holerite Digital 2026</h2>
+        <div>
+            <label for="bruto">Salário Bruto (R$)</label>
+            <input type="number" id="bruto" placeholder="0.00">
+        </div>
+
+        <div>
+            <label for="inss">Desconto INSS (Tabela 2026)</label>
+            <input type="text" id="inss" value="R$ 0,00" readonly>
+        </div>
+
+        <div>
+            <label for="irrf">Imposto de Renda (Isenção até 5k)</label>
+            <input type="text" id="irrf" value="R$ 0,00" readonly>
+        </div>
+
+        <div class="botao">
+            <button class="botao-calcular">Calcular Agora</button>
+            <button class="botao-limpar" onclick="limpaformulario(event)">Limpar Tudo</button>
+        </div>
+
+        <div class="resultado">
+            <span class="resultado-label">Salário Líquido Final:</span>
+            <span class="resultado-value"id="resultadoId">R$ 0,00</span>
+        </div>
+
+        <div>
+            <span id="mensagemisento"> </span>
+        </div>
+    </form>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
