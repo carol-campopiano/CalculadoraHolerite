@@ -34,7 +34,7 @@ Feedback visual para usuários isentos de imposto.
 - Javascript (Vanilla JS)
 
 ## Demonstração online
-Acesse https://github.com/carol-campopiano/CalculadoraHolerite.git
+Acesse  https://carol-campopiano.github.io/CalculadoraHolerite/
 
 ## Licença
 A licença deste software é **MIT**
